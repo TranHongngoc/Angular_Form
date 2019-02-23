@@ -23,7 +23,7 @@ export class TodoComponent implements OnInit {
   ngOnInit() {
   }
 
-  ngOnChange() {
+  onChange() {
     const {value} = this.userInput;
     if (value) {
       const todo: ITodo = {
@@ -39,4 +39,5 @@ export class TodoComponent implements OnInit {
   toggleTodo(i) {
     this.todos[i].complete = !this.todos[i].complete;
   }
+
 }
